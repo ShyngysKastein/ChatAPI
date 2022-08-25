@@ -1,0 +1,21 @@
+body {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  background: #eaeaea;
+  overflow: auto;
+  margin: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #ebe7de),
+    color-stop(1, #cbc7b7)
+  );
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

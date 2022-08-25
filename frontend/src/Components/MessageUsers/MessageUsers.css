@@ -1,0 +1,30 @@
+.message_users {
+  display: flex;
+  align-items: baseline;
+  background-color: rgba(221, 246, 255);
+  padding: 7px 20px;
+  margin: 0 0 0 35px;
+  line-height: 1.4em;
+  border-radius: 0px 4px 4px 4px;
+  width: 800px;
+  margin-bottom: 10px;
+}
+
+.message_users:hover {
+  background-color: rgba(221, 246, 255, 0.8);
+}
+
+.data_time {
+  width: 140px;
+  text-align: right;
+}
+
+.author_user {
+  margin-right: 30px;
+  font-weight: 700;
+  width: 300px;
+}
+
+.message_user {
+  width: 400px;
+}

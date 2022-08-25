@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainDialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(200, 200, 200, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+.dialog {
+  width: 450px;
+  height: fit-content;
+  min-height: 200px;
+  border: 1px solid black;
+  background-color: #fff;
+  border: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dialogHead {
+  min-height: 1em;
+  padding: 0.5em;
+  font-size: 25px;
+}
+
+.dialogBody {
+  flex-grow: 1;
+  padding: 0.5em;
+}
+
+.dialogFoot {
+  height: 3em;
+  padding-bottom: 0.5em;
+
+  display: flex;
+  justify-content: right;
+}
+
+.dialogButton {
+  width: 80px;
+  margin: 0 0.5em;
+  border-radius: 10px;
+  border: #fff;
+}
+
+.dialogOk {
+  background-color: rgb(65, 105, 225);
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
